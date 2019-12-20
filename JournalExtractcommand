@@ -1,0 +1,8 @@
+Journal Extract command
+
+$ export gtm_extract_nocol=1
+$ mupip journal -extract -forward file.mjl
+Extract to single file (without .broken and .loss)
+$ export gtm_extract_nocol=1
+$ mupip journal -extract -forward -fences=none file.mjl
+$ mupip journal -extract -noverify -detail -NOERROR_LIMIT -forward -fences=none file.mjl
